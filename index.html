@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Çağında Software Team Lead Olmak | Sıfırdan Uzmanlığa 60 Ders</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="AI Çağında Software Team Lead Olmak: Junior liderlikten çoklu takımlara ve CTO vizyonuna uzanan, 10 ana bölüm ve 60 pratik derslik rehber. NotebookLM ve Udemy eğitimi için hazır.">
+  <meta name="keywords" content="Software Team Lead, AI Driven Engineering, Multi-Agent Systems, Tech Lead, Engineering Manager, CTO, DORA, System Design, NotebookLM, Udemy">
+  <meta name="author" content="Ali Turgut Bozkurt">
+
+  <!-- OpenGraph Social Tags -->
+  <meta property="og:title" content="AI Çağında Software Team Lead Olmak | 60 Derslik Rehber">
+  <meta property="og:description" content="Kod ameleliğinden sistem orkestratörlüğüne: Sıfırdan uzmanlığa modern yazılım liderliği.">
+  <meta property="og:image" content="assets/cover.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Backdrop Glow -->
+  <div class="ambient-glow"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo-group">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div>
+          <div class="logo-text">AI Team Lead</div>
+          <div class="logo-tag">Zero to Hero • 60 Lessons</div>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <!-- NotebookLM Guide -->
+        <button id="notebookLmBtn" class="btn btn-secondary btn-sm" data-i18n="btnNotebookLm">
+          🎙️ NotebookLM
+        </button>
+
+        <!-- Language Toggle -->
+        <button id="langToggle" class="btn btn-outline btn-sm">
+          🇬🇧 EN
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle Theme">
+          ☀️
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="hero-badge" data-i18n="heroBadge">
+            ✨ Sıfırdan Uzmanlığa 60 Ders • 10 Ana Bölüm
+          </div>
+          <h1 class="hero-title" data-i18n="heroTitle">
+            AI Çağında Software <span class="text-gradient">Team Lead</span> Olmak
+          </h1>
+          <p class="hero-description" data-i18n="heroDesc">
+            Kod ameleliğinden sistem orkestratörlüğüne: Junior liderlikten çoklu takımları yöneten ve CTO vizyonuna uzanan 60 derslik pratik, esprili ve battle-tested rehber. NotebookLM ve Udemy eğitimi için hazır.
+          </p>
+
+          <div class="hero-actions">
+            <a href="books/AI_Driven_Software_Team_Lead_TR.pdf" download class="btn btn-primary" data-i18n="btnDownloadPdf">
+              📥 Türkçe PDF İndir (3.7 MB)
+            </a>
+            <a href="books/AI_Driven_Software_Team_Lead_EN.pdf" download class="btn btn-secondary" data-i18n="btnDownloadEnPdf">
+              📥 English PDF (3.2 MB)
+            </a>
+            <a href="books/AI_Driven_Software_Team_Lead_TR.md" download class="btn btn-outline">
+              📄 Markdown (.md)
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-value">60</span>
+              <span class="stat-label" data-i18n="statLessons">Ders</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">10</span>
+              <span class="stat-label" data-i18n="statModules">Ana Bölüm</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">120+</span>
+              <span class="stat-label" data-i18n="statPrompts">AI Promptu</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">100%</span>
+              <span class="stat-label" data-i18n="statZeroToHero">Sıfırdan Uzmanlığa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right book-showcase">
+          <div class="book-card">
+            <img src="assets/cover.jpg" alt="AI Driven Software Team Lead Book Cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Controls Toolbar (Search & Filter) -->
+    <section class="controls-bar">
+      <div class="container controls-grid">
+        <!-- Live Search -->
+        <div class="search-wrapper">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="Ders başlığı, kavram veya vaka ara...">
+        </div>
+
+        <!-- Module Filter -->
+        <div>
+          <select id="moduleFilter" class="select-input">
+            <option value="all">Tüm Bölümler (1 - 10)</option>
+          </select>
+        </div>
+
+        <!-- Level Filter -->
+        <div>
+          <select id="levelFilter" class="select-input">
+            <option value="all">Tüm Seviyeler</option>
+            <option value="başlangıç">Başlangıç / Beginner</option>
+            <option value="orta">Orta / Mid Level</option>
+            <option value="ileri">İleri / Advanced</option>
+            <option value="yönetici">Yönetici / Director / CTO</option>
+          </select>
+        </div>
+
+        <!-- Download Dropdown -->
+        <div>
+          <a href="#curriculum" class="btn btn-secondary btn-sm" onclick="window.scrollTo({top: 600, behavior: 'smooth'})">
+            Derslere Git ↓
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="curriculum-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" data-i18n="curriculumTitle">Müfredat ve Ders Kataloğu</h2>
+          </div>
+          <div id="resultsCount" class="results-count">
+            60 / 60 ders listeleniyor
+          </div>
+        </div>
+
+        <!-- Grid of Lessons -->
+        <div id="lessonsGrid" class="lessons-grid">
+          <!-- Dynamically Rendered by app.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Lesson Modal Reader -->
+  <div id="lessonModal" class="modal-overlay">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <button id="markReadBtn" class="btn btn-outline btn-sm">
+            Okundu İşaretle
+          </button>
+        </div>
+        <button id="modalClose" class="btn-icon" aria-label="Close Modal">✕</button>
+      </div>
+
+      <div id="modalBody" class="modal-body">
+        <!-- Rendered by openLessonModal() -->
+      </div>
+
+      <div class="modal-footer">
+        <button id="prevLessonBtn" class="btn btn-secondary btn-sm" data-i18n="prevLesson">
+          ← Önceki Ders
+        </button>
+        <button id="nextLessonBtn" class="btn btn-primary btn-sm" data-i18n="nextLesson">
+          Sonraki Ders →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NotebookLM Audio Guide Modal -->
+  <div id="notebookLmModal" class="modal-overlay">
+    <div class="modal-dialog" style="max-width: 680px;">
+      <div class="modal-header">
+        <h3 style="font-size: 1.15rem; font-weight: 700; margin: 0;" data-i18n="notebookLmModalTitle">
+          🎙️ NotebookLM ile Podcast Rehberi
+        </h3>
+        <button id="notebookLmClose" class="btn-icon" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+          Bu kitaptaki her ders, Google NotebookLM'in <strong>Audio Overview</strong> özelliğine doğrudan beslenebilecek şekilde tasarlanmıştır. Bu sayede her ders için Udemy kursunuzda kullanabileceğiniz 2 sunuculu, eğlenceli ve derinlemesine İngilizce/Türkçe podcastler üretebilirsiniz.
+        </p>
+
+        <div class="steps-list" style="margin-bottom: 24px;">
+          <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-text" data-i18n="notebookLmStep1">Google NotebookLM'e (notebooklm.google.com) gidin ve yeni bir not defteri açın.</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-text" data-i18n="notebookLmStep2">'Kaynak Ekle' butonuna basarak `books/tr/AI_Driven_Software_Team_Lead_TR.md` veya PDF dosyasını yükleyin.</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-text" data-i18n="notebookLmStep3">'Audio Overview' bölümüne gelin, Customize/Özelleştir seçeneğine her dersin sonundaki özel podcast komutunu yapıştırın.</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">4</div>
+            <div class="step-text" data-i18n="notebookLmStep4">'Generate' butonuna basın: İki sanal AI sunucu dersin esprili ve derinlikli bir podcast özetini çıkarsın!</div>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-tertiary); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <strong style="font-size: 0.88rem; color: var(--accent-cyan);">💡 Udemy Eğitimi İpucu:</strong>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 6px;">
+            NotebookLM'in ürettiği ses kaydını indirip her dersin başına veya sonuna "Audio Recap" (Sesli Özet) olarak ekleyebilir, dersin slaytlarını ise kitaptaki Given-When-Then ve Comparison tablolarından otomatik üretebilirsiniz.
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer" style="justify-content: flex-end;">
+        <button class="btn btn-primary btn-sm" onclick="elements.notebookLmClose.click()">
+          Anladım, Harika!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    Prompt panoya kopyalandı! 📋
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-group" style="margin-bottom: 12px;">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span class="logo-text">AI Team Lead</span>
+          </div>
+          <p class="footer-desc">
+            AI çağında yazılım liderliği için sıfırdan uzmanlığa 60 derslik kapsamlı rehber. GitHub Pages üzerinde ücretsiz ve açık kaynaklı yayınlanmaktadır.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Kitap & Dosyalar</h4>
+          <ul class="footer-links">
+            <li><a href="books/AI_Driven_Software_Team_Lead_TR.pdf" download class="footer-link">Türkçe PDF (3.7 MB)</a></li>
+            <li><a href="books/AI_Driven_Software_Team_Lead_EN.pdf" download class="footer-link">English PDF (3.2 MB)</a></li>
+            <li><a href="books/AI_Driven_Software_Team_Lead_TR.md" download class="footer-link">Türkçe Markdown</a></li>
+            <li><a href="books/AI_Driven_Software_Team_Lead_EN.md" download class="footer-link">English Markdown</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Entegrasyonlar</h4>
+          <ul class="footer-links">
+            <li><a href="https://notebooklm.google.com" target="_blank" rel="noreferrer" class="footer-link">Google NotebookLM</a></li>
+            <li><a href="https://www.udemy.com" target="_blank" rel="noreferrer" class="footer-link">Udemy Course Studio</a></li>
+            <li><a href="https://claude.ai" target="_blank" rel="noreferrer" class="footer-link">Claude 3.7 Prompts</a></li>
+            <li><a href="https://cursor.com" target="_blank" rel="noreferrer" class="footer-link">Cursor Rules</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Yazar</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-primary); font-weight: 600;">Ali Turgut Bozkurt</span></li>
+            <li><span style="color: var(--text-muted); font-size: 0.85rem;">Principal Software Engineer</span></li>
+            <li><span style="color: var(--text-muted); font-size: 0.85rem;">Java & Cloud Systems Specialist</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 AI-Driven Software Team Lead. All rights reserved.
+        </div>
+        <div>
+          Designed for high-impact engineering leadership & GitHub Pages.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
